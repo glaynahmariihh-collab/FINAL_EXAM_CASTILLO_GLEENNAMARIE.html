@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam Submission - Gleenna Castillo</title>
+
+    <style>
+        /* General Styles for Neat, Readable Output */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #1a1a40; /* Darker heading color */
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* --- 1. Student Information Section Styling --- */
+        .student-info-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .personal-details {
+            display: grid;
+            grid-template-columns: 150px 1fr; /* Image on the left, text on the right */
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #profile-picture {
+            width: 100%;
+            height: auto;
+            border-radius: 50%; /* Makes the picture round */
+            border: 3px solid #1a1a40;
+            object-fit: cover;
+        }
+
+        .about-me {
+            font-style: italic;
+            background-color: #e6f7ff; /* Lightly colored background for the paragraph */
+            padding: 15px;
+            border-left: 5px solid #007bff;
+        }
+        
+        /* --- 2. Exam Section Styling --- */
+        .exam-section {
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .question {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        .question h3 {
+            border-bottom: none;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        /* Styling the Answer as a Box/Highlight/Bold (Required) */
+        .answer {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #1a1a40; 
+            display: flex; /* To align the answer box */
+            align-items: center;
+        }
+
+        .chosen-answer {
+            background-color: #ffeb3b; /* Highlight color */
+            padding: 5px 10px;
+            margin-left: 10px;
+            border: 1px solid #ffc107;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: bolder; /* Explicitly bolding the answer letter */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header class="student-info-section">
+        <h1>1. Student Information Section</h1>
+        
+        <div class="info-content">
+            <h2>Full Name: <span id="student-name">Gleenna Marie D. Castillo</span></h2>
+
+            <div class="personal-details">
+                <img src="image.png" alt="Student Picture" id="profile-picture">
+                
+                <p class="about-me">
+                    I am a highly motivated student interested in web development and I enjoy learning new programming languages.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="exam-section">
+        <h1>2. Exam Section – Multiple Choice Questions</h1>
+        <div id="questions-container">
+            
+            <div class="question">
+                <h3>Q1. Which of the following describes a "web browser"?<br>
+                    A. A tool for managing network hardware<br>
+                    B. A software application for retrieving and displaying web content<br>
+                    C. A protocol used for secure data transmission<br>
+                    D. A type of server that hosts websites
+                </h3>
+                <p class="answer">
+                    Your Answer: B
+                    <span class="chosen-answer">B</span>
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Q2. In the context of networking, what is the primary purpose of a router?<br>
+                    A. To store data for quick access<br>
+                    B. To connect multiple networks and direct data traffic between them<br>
+                    C. To provide wireless connectivity to devices<br>
+                    D. To encrypt data being transmitted
+                </h3>
+                <p class="answer">
+                    Your Answer: B
+                    <span class="chosen-answer">B</span>
+                </p>
+            </div>
+            
+            <div class="question">
+                <h3>Q3. What describes the evolution from Web 1.0 to Web 2.0?<br>
+                    A. From static pages to user-generated content and social media<br>
+                    B. From mobile apps to desktop apps<br>
+                    C. From real-time chat to slow messaging<br>
+                    D. From email to postal mail
+                </h3>
+                <p class="answer">
+                    Your Answer: A
+                    <span class="chosen-answer">A</span>
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Q4. Which device forwards data packets between computer networks using routing protocols?<br>
+                    A. Hub<br>
+                    B. Switch<br>
+                    C. Router<br>
+                    D. Bridge
+                </h3>
+                <p class="answer">
+                    Your Answer: C
+                    <span class="chosen-answer">C</span>
+                </p>
+            </div>
+
+            <div class="question">
+                <h3>Q5. What is a web browser used for?<br>
+                    A. It stores databases<br>
+                    B. It sends physical mail<br>
+                    C. It retrieves and displays internet content such as pages, images, and videos<br>
+                    D. It runs operating system commands
+                </h3>
+                <p class="answer">
+                    Your Answer: C
+                    <span class="chosen-answer">C</span>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    </body>
+</html>
